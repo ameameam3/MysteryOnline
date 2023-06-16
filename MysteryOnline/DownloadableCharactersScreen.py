@@ -46,6 +46,7 @@ class DownloadableCharactersScreen(Popup):
 
     def download_character(self, char_name, link, ver):
         try:
+            raise Exception("fuck you")
             if link.find("drive.google.com") == -1: #checks for google drive link
                 try:
                     direct_link = link
@@ -113,6 +114,7 @@ class DownloadableCharactersScreen(Popup):
             char = arguments[0]
             shared_link = arguments[1]
             try:
+                raise Exception("fuck you")
                 if shared_link.find("drive.google.com") == -1:  # checks for google drive shared_link
                     try:
                         direct_link = shared_link
